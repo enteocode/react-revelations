@@ -1,0 +1,109 @@
+@keyframes Image-dash {
+    0% {
+        stroke-dasharray: 1,200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -124;
+    }
+}
+
+@keyframes Image-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.Image {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    transform: translateZ(0);
+}
+
+.Image * {
+    box-sizing: inherit;
+}
+
+.Image-wrapper {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.Image-placeholder {
+    background: rgba(0,0,0,.05);
+}
+
+.Image-loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -25px 0 0 -25px;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    overflow: hidden;
+
+    transition: opacity .2s ease-out;
+    animation: Image-rotate 2s ease-in-out infinite;
+}
+
+.Image-loader circle {
+    stroke-width: 5;
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+    stroke-miterlimit: 10;
+    stroke-linecap: round;
+
+    fill: none;
+
+    animation: Image-dash 1s ease-in-out infinite;
+}
+
+.Image-object, .Image-alert {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity .4s ease-in;
+}
+
+.Image-caption {
+    display: block;
+    font-size: .75em;
+    text-align: center;
+    padding: 1em;
+    opacity: .5;
+}
+
+.Image-alert {
+    display: flex;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Image-loaded .Image-object {
+    opacity: 1;
+}
+
+.Image-loaded .Image-loader, .Image-error .Image-loader {
+    opacity: 0;
+    animation-play-state: paused;
+}
+
+.Image-error .Image-alert {
+    opacity: 1;
+}

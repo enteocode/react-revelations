@@ -1,0 +1,24 @@
+.quote {
+    display: block;
+    position: relative;
+    margin: 0 0 24px;
+    padding: 12px 12px 12px 24px;
+    border-left: 4px solid rgba(255,255,255,.2);
+}
+
+.quote-cite {
+    font-size: 1.25em;
+    opacity: .4;
+}
+
+.quote-from {
+    display: block;
+    font-size: .75em;
+    text-align: right;
+}
+
+.quote-from::before {
+    display: inline-block;
+    content: "–";
+    margin-right: 6px;
+}

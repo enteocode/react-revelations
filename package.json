@@ -1,0 +1,52 @@
+{
+    "name": "react-revelations",
+    "version": "1.0.0",
+    "description": "Image component for React",
+    "main": "src/index.js",
+    "author": {
+        "name":  "Székely Ádám",
+        "email": "stereotribe@hotmail.com",
+        "url":   "https://www.facebook.com/stereotribe"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url":  "git+https://github.com/enteocode/react-revelations.git"
+    },
+    "devDependencies": {
+        "babel-plugin-external-helpers": "^6.22.0",
+        "babel-preset-latest": "^6.24.0",
+        "babel-preset-react": "^6.23.0",
+        "babel-preset-stage-0": "^6.22.0",
+        "cssnano": "^3.10.0",
+        "gulp": "^3.9.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-rollup": "^2.11.0",
+        "react": "^15.4.2",
+        "react-dom": "^15.4.2",
+        "rollup-plugin-babel": "^2.7.1",
+        "rollup-plugin-commonjs": "^8.0.2",
+        "rollup-plugin-node-resolve": "^2.0.0",
+        "rollup-plugin-postcss": "^0.2.0",
+        "rollup-plugin-replace": "^1.1.1",
+        "rollup-plugin-uglify": "^1.0.1"
+    },
+    "peerDependencies": {
+        "react-dom": "^15.0",
+        "react": "^15.0"
+    },
+    "scripts": {
+        "build": "gulp build"
+    },
+    "keywords": [
+        "react",
+        "react-component",
+        "image",
+        "lazy-load",
+        "responsive"
+    ],
+    "bugs": {
+        "url": "https://github.com/enteocode/react-revelations/issues"
+    },
+    "homepage": "https://enteocode.github.io/react-revelations"
+}

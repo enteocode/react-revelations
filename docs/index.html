@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8">
+
+    <title>React Revelations</title>
+
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="all">
+    <meta name="revisit-after" content="7 days">
+    <meta name="author" content="Székely Ádám">
+
+    <meta property="og:title" content="React Revelations">
+    <meta property="og:site_name" content="Enteocode">
+    <meta property="og:url" content="https://enteocode.github.io/react-revelations/">
+    <meta property="og:description" content="A simple, responsive lazy-loader component for displaying images.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://enteocode.github.io/react-revelations/static/opengraph.png">
+
+    <meta name="msapplication-config" content="static/browserconfig.xml">
+    <meta name="theme-color" content="#212429">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="icon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="icon-96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="icon-192.png" sizes="192x192">
+
+    <style>.btn,body{color:#f1f4f6}body,html{margin:0;padding:0}html{box-sizing:border-box}*,::after,::before{box-sizing:inherit}body{font:400 16px/1.5 sans-serif;background:#2d3036;overflow-x:hidden;overflow-y:scroll;scroll-behavior:smooth}img{display:block;max-width:100%;height:auto}.btn{display:inline-block;border:0;border-radius:3px;padding:0 24px;background:#409bec;line-height:48px;text-decoration:none;text-transform:uppercase;font-size:.75rem;font-weight:700;opacity:.8;transform:translateY(0);pointer-events:all}.btn:focus,.btn:hover,.parallax{opacity:1}.btn:focus{outline:0}.btn:active{transform:translateY(1px)}.header{display:block;flex:auto;width:100vw;height:100vh;background:#000;overflow:hidden;transform-style:preserve-3d;transform:translateZ(0);user-select:none;pointer-events:none}.header-title .item{display:block;margin:0 auto}.no-script,.no-script-text{display:block;margin:0 auto 12px}.no-script{text-align:center;max-width:300px}.no-script .btn{min-width:150px}.no-script-text{font-size:.875em;margin-bottom:24px}.parallax{display:flex;flex:auto;flex-flow:column nowrap;padding:32px;height:100vh;justify-content:center;background:#212429;transform:translate3d(0,0,0)}@-ms-viewport{width:device-width}</style>
+</head>
+
+<body>
+<header class="header">
+    <div class="parallax">
+        <h1 class="header-title">
+            <img class="header-logo item" src="static/img/react-revelations.logo.svg" alt="" width="100" height="100"/>
+            <img class="header-typo item" src="static/img/react-revelations.typo.svg" alt="React Revelations" width="150" height="100"/>
+        </h1>
+
+        <noscript class="no-script">
+            <span class="no-script-text">You must enable Javascript to see the component at work!</span>
+            <a class="no-script-link btn" href="http://www.enable-javascript.com/" rel="noopener" target="_blank">How to</a>
+        </noscript>
+    </div>
+</header>
+
+<div id="root"></div>
+
+<script>!function(){var n=document.querySelector(".parallax");if(n){var e=window.requestAnimationFrame||window.webkitRequestAnimationFrame,t=function(){e(function(){var e=window.pageYOffset,t=window.innerHeight,i=(t-e)/t;Object.assign(n.style,{transform:"translate3d(0,"+.5*e+"px,0)",opacity:0>i?0:i})})};window.addEventListener("scroll",t);window.addEventListener("load",t)}}(window,document)</script>
+<script src="static/app.js" defer></script>
+
+</body>
+</html>
