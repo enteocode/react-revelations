@@ -77,7 +77,7 @@ const App = () => {
                 <p className="article-text">Aliquam erat volutpat. Cras tristique convallis consequat. Aenean vitae lacus blandit, vulputate neque eu, placerat mi. Maecenas scelerisque luctus lorem. Duis vitae sollicitudin turpis, non ultrices nulla. Morbi auctor est a lorem interdum, ut efficitur diam bibendum. Duis ac ipsum ac lacus accumsan egestas sed eu nisi.</p>
             </article>
 
-            <footer className="footer emphasized container">
+            <footer className="footer emphasized">
                 <div className="footer-craft">
                     <div className="footer-right">Handcrafted with ❤ and passion</div>
                 </div>
