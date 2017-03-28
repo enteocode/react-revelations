@@ -1,7 +1,7 @@
-![React Revelations][1]
-=======================
+React Revelations
+=================
 
-Image component for React.
+> Image component for React.
 
 ## Key Features
 
@@ -55,15 +55,19 @@ for the placeholder. This is a must to prevent repaints on DOM.
 
 Optional properties:
 
-- **caption** {string) - The title of the Image (this will be read by screen-readers)
+- **caption** (string) - The title of the Image (this will be read by screen-readers)
 - **containerClass** (string) - Stylesheet class to append
 - **errorColor** (string) - Color of the error icon (if can't load the resource)
 - **loaderColor** (string) - Color of the loader spinner
+
+## Example
+
+You can see the component in action at the ![GitHub Page][1] of the repository.
 
 ## License
 
 The MIT License (MIT). Please see the [License File][2] for more information.
 
 
-[1]: https://enteocode.github.io/react-revelations/static/img/logo.svg "React Revelations"
+[1]: https://enteocode.github.io/react-revelations/ "GitHub Page for React Revelations"
 [2]: ./LICENSE
