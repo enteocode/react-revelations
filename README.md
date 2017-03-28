@@ -62,7 +62,7 @@ Optional properties:
 
 ## Example
 
-You can see the component in action at the ![GitHub Page][1] of the repository.
+You can see the component in action at the [GitHub Page][1] of the repository.
 
 ## License
 
