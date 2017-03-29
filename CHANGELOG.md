@@ -2,6 +2,7 @@
 
  * Changes JSX conditional statements to logical operators
  * Changes EditorConfig for SVG
+ * Updates OpenGraph meta-tags and image
 
 ### 1.0.1 - 2017-03-28
 
