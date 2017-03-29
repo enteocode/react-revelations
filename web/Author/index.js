@@ -13,15 +13,6 @@ import * as Utils from './utils';
 
 import './style.css';
 
-
-
-/**
- * Returns a formatted
- * @param date
- * @param format
- */
-const getDateText = (date, format) => ('');
-
 /**
  * Author (template)
  *
@@ -35,8 +26,10 @@ const getDateText = (date, format) => ('');
  */
 const Author = ({ name, role, link, email, image, date }) => (
     <div className="author">
+
         {/* Avatar */}
-        { ! image ? null : <div className="author-avatar">
+
+        {image && <div className="author-avatar">
             <img src={image} alt={name}/>
         </div>}
 
@@ -46,14 +39,14 @@ const Author = ({ name, role, link, email, image, date }) => (
             <a className="author-name" href={Utils.getMailLink(email)}>{name}</a>
             <span className="author-role">{role}</span>
 
-            {! date ? null : <time className="author-publish" dateTime={Utils.getDateText(date, Utils.DATE_BASIC)}>
+            {date && <time className="author-publish" dateTime={Utils.getDateText(date, Utils.DATE_BASIC)}>
                 {Utils.getDateText(date, Utils.DATE_LOCAL)}
             </time>}
         </div>
 
         {/* Facebook */}
 
-        { ! link ? null : <div className="author-social">
+        {link && <div className="author-social">
             <Anchor className="link" href={link}>Facebook</Anchor>
         </div>}
     </div>

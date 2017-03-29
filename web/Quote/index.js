@@ -21,7 +21,7 @@ const Quote = ({ cite, from }) => (
     <blockquote className="quote">
         <div className="quote-cite">{cite}</div>
 
-        { ! from ? null : <div className="quote-from">
+        {from && <div className="quote-from">
             {from}
         </div>}
     </blockquote>
