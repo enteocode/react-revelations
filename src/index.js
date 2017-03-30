@@ -93,7 +93,7 @@ class Image extends React.Component
 
                     {/* Loader */}
 
-                    <svg className="Image-loader" height={50} viewBox="0 0 50 50" width={50}>
+                    <svg className="Image-loader" height={50} viewBox="0 0 50 50" width={50} role="presentation">
                         <circle stroke={loaderColor} cx={25} cy={25} r={20}/>
                     </svg>
 
@@ -112,7 +112,7 @@ class Image extends React.Component
                     {/* Error */}
 
                     {error && <div className="Image-alert">
-                        <svg fill={errorColor} height={50} viewBox="0 0 24 24" width={50}>
+                        <svg fill={errorColor} height={50} viewBox="0 0 24 24" width={50} role="presentation">
                             <path d="M0 0h24v24H0V0z" fill="none"/>
                             <path d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
                         </svg>

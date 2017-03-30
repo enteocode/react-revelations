@@ -5,6 +5,7 @@
  * Updates OpenGraph meta-tags and image
  * Adds missing SEO description and keywords
  * Fixes duplications on stylesheets
+ * Adds presentation roles to component-specific images
 
 ### 1.0.1 - 2017-03-28
 
