@@ -113,9 +113,3 @@
 .footer-icon:hover, .footer-icon:focus {
     opacity: .6;
 }
-
-/* Fixes */
-
-@-ms-viewport{
-    width: device-width;
-}

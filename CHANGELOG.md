@@ -4,6 +4,7 @@
  * Changes EditorConfig for SVG
  * Updates OpenGraph meta-tags and image
  * Adds missing SEO description and keywords
+ * Fixes duplications on stylesheets
 
 ### 1.0.1 - 2017-03-28
 
